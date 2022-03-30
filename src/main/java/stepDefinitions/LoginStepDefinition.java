@@ -23,6 +23,7 @@ public class LoginStepDefinition {
 		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://ui.freecrm.com/");
+		driver.manage().window().maximize();
 	}
 	
 	@When("^title page of login page is Free CRM$")
